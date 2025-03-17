@@ -25,7 +25,12 @@ const content = [
     "Por otro lado, una de las características principales de React es su programación declarativa",
     "Con React, tu defines el objetivo y React averigua como llegar a ese objetivo",
   ],
-  ["haciendo el reto de agregar otro boton "],
+  [
+    "haciendo el reto de agregar otro boton para que despliege esta informacion",
+    "esta es la segunada vez que hago el reto pero este es para subir al repositoria",
+    "esto es basado en el curso de Picando Código",
+    "y si cumpli el reto",
+  ],
 ];
 
 export default function App() {
@@ -63,6 +68,12 @@ export default function App() {
             onClick={() => setActiveContentIndex(2)}
           >
             Recursos Relacionados
+          </button>
+          <button
+            className={activeContentIndex === 3 ? "active" : ""}
+            onClick={() => setActiveContentIndex(3)}
+          >
+            Reto de React
           </button>
         </menu>
         <div id="tab-content">
